@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-rydv-tenant/test-app-nhab/devfile-sample-hello-world@sha256:01813537fc30fbe6967d12d5762f2bc49584d0938a24d0551d760c0f73ff117b
+        name: my-nginx
+        resources: {}
+status: {}

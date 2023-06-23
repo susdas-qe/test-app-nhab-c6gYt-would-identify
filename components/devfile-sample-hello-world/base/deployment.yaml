@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-hello-world
     spec:
       containers:
-      - image: hello-world:latest
+      - image: quay.io/susdas_quay_org/build-e2e-rydv-tenant/test-app-nhab/devfile-sample-hello-world@sha256:01813537fc30fbe6967d12d5762f2bc49584d0938a24d0551d760c0f73ff117b
         name: my-nginx
         ports:
         - containerPort: 8080
